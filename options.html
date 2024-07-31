@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manage Scroll Hell Websites</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #sites-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    #sites-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 5px;
+      border-radius: 5px;
+    }
+    #sites-list button {
+      background-color: #f44336;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #sites-list button:hover {
+      background-color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+  <h1>Manage Scroll Hell Websites</h1>
+  <input type="text" id="new-site" placeholder="https://example.com">
+  <button id="add-site-button">Add Website</button>
+  <h2>Current Websites</h2>
+  <ul id="sites-list"></ul>
+  <script src="options.js"></script>
+</body>
+</html>

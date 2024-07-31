@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "ScrollGuard",
+  "version": "1.1",
+  "description":  "Protect yourself from the scroll vortex and get daily doses of positivity. Scroll less, live more!",
+  "icons": {
+    "16": "icons/icon_16.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ],
+  "host_permissions": [
+    "https://zenquotes.io/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "defaut_icon": {
+      "48": "icons/icon_48.png"
+    }
+
+  },
+  "options_page": "options.html"
+}
