@@ -1,4 +1,4 @@
-# MotivationalScroller
+# SCROLL GUARD
 
 A Chrome extension to help you fight scroll hell and provide motivational quotes.
 
